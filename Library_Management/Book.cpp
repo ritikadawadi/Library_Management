@@ -5,7 +5,7 @@
 
 using namespace std;
 
-Book::Book(int isbn, string title, int noofauthors, string* author, Date published, string genre)
+Book::Book(int isbn, string title, int noofauthors, string* author, Date published, string genre, int noofcopies)
 {
 	this->ISBN = isbn;
 	this->Title = title;
@@ -17,6 +17,7 @@ Book::Book(int isbn, string title, int noofauthors, string* author, Date publish
 	this->NumberOfAuthors = noofauthors;
 	this->PublishDate = published;
 	this->Genre = genre;
+	this ->NoOfCopies = noofcopies
 }
 
 Book::Book(string Title)
